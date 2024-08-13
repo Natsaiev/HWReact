@@ -1,46 +1,43 @@
-.ratingContainer{
+.ratingContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #a0a0a0;
-    margin-top: 10px;
-    padding: 10px;
-
-    border-radius: 16px;
+    background-color: #9a9a9a;
+    border-radius: 15px;
     max-width: 40%;
+    padding: 10px;
 }
 
-
-.headerRating{
+.ratingHeader {
     color: #ffffff;
 }
 
-.StarsContainer{
+.starsContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
 }
 
-.ratingButtonsContainer{
+.ratingBtnsContainer {
     display: flex;
     flex-direction: row;
     gap: 10px;
-
 }
 
-.ratingButtonsContainer button{
+.ratingBtn {
     width: 120px;
-    padding: 6px;
+    padding: 5px;
     background-color: #000000;
-    border: none;
-    border-radius: 8px;
-    transition: transform 0.2s;
     color: #FFFFFF;
-    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.5s;
+
 }
 
-.ratingButtonsContainer button:hover {
+.ratingBtn:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }

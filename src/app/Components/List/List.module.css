@@ -8,15 +8,13 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #ffffff;
-    background-color: #a0a0a0;
-    border: none;
+    background-color: #9a9a9a;
     border-radius: 10px;
-    padding-left: 20px;
-    
+    padding-left: 20px ;
+    color: #FFFFFF;
 }
 
-.removeBtnPerson {
+.removeBtnPerson{
     margin-left: 10px;
     padding: 5px 10px;
     background-color: #ff4d4d;
@@ -29,4 +27,3 @@ li {
 .removeBtnPerson:hover {
     background-color: #ff0000;
 }
-

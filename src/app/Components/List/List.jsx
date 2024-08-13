@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { useState } from 'react';
 import styles from "./List.module.css";
 
 
 export const List = () => {
-
     const [people, setPeople] = useState([
         { id: 1, name: 'Иван', age: 20 },
         { id: 2, name: 'Мария', age: 22 },
@@ -15,11 +14,13 @@ export const List = () => {
         { id: 8, name: 'Гриша', age: 20 },
         { id: 9, name: 'Серафим', age: 21 }
     ]);
-    
+
     const removePerson = (id) => {
+        console.log('Removing person with id:', id); 
         setPeople(people.filter(person => person.id !== id));
     }
-    return(
+
+    return (
         <div>
             <h1>Список приглашенных</h1>
             <ul>
@@ -31,5 +32,5 @@ export const List = () => {
                 ))}
             </ul>
         </div>
-    )
+    );
 }

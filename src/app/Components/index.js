@@ -1,2 +1,2 @@
-export {Rating} from './Rating/Rating';
-export {List} from './List/List';
+export {List} from "./List/List";
+export {Rating} from "./Rating/Rating";
