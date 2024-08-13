@@ -1,0 +1,46 @@
+.ratingContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #a0a0a0;
+    margin-top: 10px;
+    padding: 10px;
+
+    border-radius: 16px;
+    max-width: 40%;
+}
+
+
+.headerRating{
+    color: #ffffff;
+}
+
+.StarsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+}
+
+.ratingButtonsContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.ratingButtonsContainer button{
+    width: 120px;
+    padding: 6px;
+    background-color: #000000;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.ratingButtonsContainer button:hover {
+    transform: scale(1.1);
+}
