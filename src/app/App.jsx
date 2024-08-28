@@ -1,18 +1,13 @@
 import "./App.css";
-import { Rating } from "./Components";
-import { List } from "./Components";
 
 
 
-function App(){
+export const App=() => {
 return(
     <div className="App">
-        <Rating/>
-        <List />
+      <button></button> 
     </div>
 )
 
 
 }
-
-export default App;
