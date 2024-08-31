@@ -1,2 +1,2 @@
-export {Rating} from './Rating/Rating';
-export {List} from './List/List';
+export {CityCard} from "../Components";
+export {CitySelectors} from "../Components";
