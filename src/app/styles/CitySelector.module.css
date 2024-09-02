@@ -1,0 +1,16 @@
+.form {
+  color: rgb(17, 75, 5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.select {
+  height: 50px;
+  width: 150px;
+  background-color: rgb(88, 177, 95);
+  border: 3px solid greenyellow;
+  border-radius: 15px;
+  color: rgb(196, 224, 190);
+}
