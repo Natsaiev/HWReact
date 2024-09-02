@@ -1,14 +1,12 @@
 import "./App.css";
-import { Rating } from "./Components";
-import { List } from "./Components";
+import Spotify from "./Components/Spotify/Spotify";
 
 
 
 function App(){
 return(
     <div className="App">
-        <Rating/>
-        <List />
+        <Spotify/>
     </div>
 )
 
