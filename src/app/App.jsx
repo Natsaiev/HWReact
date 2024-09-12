@@ -1,16 +1,7 @@
-import "./App.css";
+import UserProfile from "./Components/UserProfile/UserProfile";
 
-
-
-
-function App(){
-return(
-    <div className="App">
-
-    </div>
-)
-
-
+function App() {
+  return <UserProfile />;
 }
 
 export default App;
