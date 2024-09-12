@@ -1,16 +1,7 @@
-import "./App.css";
+import ListItems from "./Components/ListItems";
 
-
-
-
-function App(){
-return(
-    <div className="App">
-
-    </div>
-)
-
-
+function App() {
+  return <ListItems />;
 }
 
 export default App;
