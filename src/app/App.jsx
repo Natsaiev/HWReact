@@ -1,13 +1,13 @@
 import "./App.css";
+import { CatImage } from "./Components/CatImage/CatImage";
 
 
 
 
 function App(){
-return(
-    <div className="App">
-
-    </div>
+return( 
+<CatImage/>
+    
 )
 
 
