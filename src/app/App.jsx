@@ -1,16 +1,12 @@
-import "./App.css";
+import { Main } from "./Components/Main";
+import { Theme } from "./context/theme";
 
-
-
-
-function App(){
-return(
-    <div className="App">
-
-    </div>
-)
-
-
+function App() {
+  return (
+    <Theme>
+      <Main />
+    </Theme>
+  );
 }
 
 export default App;
