@@ -1,13 +1,11 @@
 import "./App.css";
-
+import DynamicForm from "./Components/DynamicForm/DynamicForm";
 
 
 
 function App(){
 return(
-    <div className="App">
-
-    </div>
+    <DynamicForm/>
 )
 
 
