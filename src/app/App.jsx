@@ -1,16 +1,13 @@
-import "./App.css";
+import { Provider } from "react-redux";
+import { User } from "./Components/User/User";
+import { store } from "./store/store";
 
-
-
-
-function App(){
-return(
-    <div className="App">
-
-    </div>
-)
-
-
+function App() {
+  return (
+    <Provider store={store}>
+      <User />
+    </Provider>
+  );
 }
 
 export default App;
