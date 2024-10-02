@@ -1,16 +1,13 @@
-import "./App.css";
+import { Filter } from "./Components/Filter/Filter";
+import { UserList } from "./Components/UserList/UserList";
 
-
-
-
-function App(){
-return(
-    <div className="App">
-
-    </div>
-)
-
-
+function App() {
+  return (
+    <>
+      <Filter />
+      <UserList />
+    </>
+  );
 }
 
 export default App;
