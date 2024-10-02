@@ -1,8 +1,11 @@
-.App{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background-color: #000000;
-}
+body {
+    padding: 20px;
+    background-color: rgb(18, 110, 141);
+  }
+  
+  input {
+    background-color: rgb(198, 234, 245);
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px;
+  }

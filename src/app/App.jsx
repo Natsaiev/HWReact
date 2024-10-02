@@ -1,18 +1,8 @@
-import "./App.css";
-import { Rating } from "./Components";
-import { List } from "./Components";
+import { Input } from "./Components/Input";
+import s from "./App.css";
 
-
-
-function App(){
-return(
-    <div className="App">
-        <Rating/>
-        <List />
-    </div>
-)
-
-
+function App() {
+  return <Input />;
 }
 
 export default App;
