@@ -1,5 +1,14 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.active {
+  text-decoration: underline;
 }
