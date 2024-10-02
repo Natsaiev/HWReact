@@ -1,51 +1,53 @@
-import { useCallback, useMemo, useState } from "react";
-import { UserList } from "./Components/UserList";
+import {
+  AppBar,
+  Button,
+  Container,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogContentText,
+  DialogActions,
+  Typography,
+} from "@mui/material";
+import { useState } from "react";
 
-const users = [
-  {
-    id: 1,
-    name: "Ralph",
-  },
-  {
-    id: 2,
-    name: "Holly",
-  },
-  {
-    id: 3,
-    name: "Rose",
-  },
-  {
-    id: 4,
-    name: "George",
-  },
-  {
-    id: 5,
-    name: "Neva",
-  },
-];
 function App() {
-  const [filter, setFilter] = useState("");
-  const filterUsers = useCallback((filter) => {
-    if (filter.length !== 0) {
-      const filteredArray = users.filter((user) =>
-        user.name.toLowerCase().includes(filter.toLowerCase())
-      );
-      return filteredArray;
-    }
-    return users;
-  }, []);
-  const filteredArray = useMemo(
-    () => filterUsers(filter),
-    [filter, filterUsers]
-  );
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <input
-        type="text"
-        value={filter}
-        onChange={(e) => setFilter(e.target.value)}
-      />
-      <UserList userArray={filteredArray} />
+      <AppBar position="static" style={{ padding: "8px" }}>
+        <Typography variant="h5">My Material UI App</Typography>
+      </AppBar>
+      <Container sx={{ mt: 4 }}>
+        <Typography mb={2} variant="h3">
+          Welcome to our app!
+        </Typography>
+        <Button variant="contained" onClick={() => setIsOpen(true)}>
+          Open dialog window
+        </Button>
+      </Container>
+      <Dialog
+        open={isOpen}
+        onClose={() => setIsOpen(false)}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">
+          Did I write this header myself?
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+            I sure did. But it doesn't contain any meaningful message. I
+            apologise if you spent your time wastefully
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={() => setIsOpen(false)}>Not a problem</Button>
+          <Button onClick={() => setIsOpen(false)} autoFocus>
+            Agree
+          </Button>
+        </DialogActions>
+      </Dialog>
     </div>
   );
 }
