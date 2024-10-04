@@ -1,16 +1,11 @@
 import "./App.css";
+import { UserList } from "./Components/UserList";
 
-
-
-
-function App(){
-return(
-    <div className="App">
-
-    </div>
-)
-
-
+function App() {
+  return <UserList />;
 }
 
 export default App;
+
+
+
