@@ -3,3 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.submitQuiz {
+  background-color: #007BFF;
+  color: white;
+  border: none; 
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2em; 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.3s; 
+  margin-top: 20px; 
+}
+
+.submitQuiz:hover {
+  background-color: #0056b3; 
+  transform: translateY(-2px);
+}
+
+.submitQuiz:active {
+  background-color: #004494;
+  transform: translateY(0); 
+}
