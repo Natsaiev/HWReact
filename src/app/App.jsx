@@ -1,16 +1,7 @@
-import "./App.css";
+import { Quote } from "./Components/Quote/Quote";
 
-
-
-
-function App(){
-return(
-    <div className="App">
-
-    </div>
-)
-
-
+function App() {
+  return <Quote />;
 }
 
 export default App;
